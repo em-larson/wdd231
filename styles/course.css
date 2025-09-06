@@ -1,0 +1,131 @@
+header {
+    background: rgb(106, 86, 150);
+    display: block;
+}
+
+#head {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+#menu {
+    display: none;
+}
+
+#logo {
+    max-width: 150px;
+    padding: 3rem;
+}
+
+h3 {
+    font-size: 100px;
+}
+
+nav {
+    background: rgb(241, 176, 126);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: large;
+    color: black;
+    padding: .5rem 3rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgb(205, 148, 104);
+}
+
+#sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+}
+
+#about {
+    grid-column: 1/3;
+}
+
+h1 {
+    margin-left: 1rem;
+}
+
+section {
+    background: rgb(241, 176, 126);
+    padding-bottom: 1rem;
+    margin: 1rem;
+    border-radius: 3rem;
+}
+
+h2 {
+    text-align: center;
+    background-color: rgb(177, 155, 223);
+    padding: 1rem;
+    border-radius: 2rem 2rem 0 0;
+    margin: 0;
+}
+
+section img {
+    margin: auto;
+    display: block;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+section p {
+    padding: 1rem;
+}
+
+#webCertificate {
+    grid-column: 1/4;
+}
+
+#certificate {
+
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+#certificate button {
+    width: 100%;
+    margin: .5rem;
+    padding: 1rem 0;
+    max-width: 300px;
+    border-radius: 2rem;
+}
+
+footer {
+    background: rgb(106, 86, 150);
+    text-align: center;
+    padding: 1rem;
+}
+
+#socials {
+    background: none;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+li {
+    list-style: none;
+    padding: 1rem 2rem;
+    background: rgb(177, 155, 223);
+    margin: .5rem;
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
