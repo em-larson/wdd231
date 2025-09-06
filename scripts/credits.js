@@ -82,8 +82,10 @@ const courses = [
 
 // Build the HTML for that section //
 
+const creditCount = document.getElementById('credit');
 let filteredcourses = courses;
 buildList();
+addCredits();
 
 function buildList() {
     const listContainer = document.getElementById("classes");
@@ -115,14 +117,30 @@ const all = document.getElementById('all');
 cse.addEventListener('click', () => {
     filteredcourses = courses.filter((course) => course.subject === "CSE");
     buildList();
+    addCredits();
 });
 
 wdd.addEventListener('click', () => {
     filteredcourses = courses.filter((course) => course.subject === "WDD");
     buildList();
+    addCredits();
 });
 
 all.addEventListener('click', () => {
     filteredcourses = courses;
     buildList();
+    addCredits();
 });
+
+//add up the credits shown //
+
+
+
+function addCredits() {
+    creditCount.innerHTML = ""
+    let count = 0;
+    filteredcourses.forEach((course) => {
+        count = count + course.credits;
+    });
+    creditCount.innerHTML = `The total credits for the courses listed above is ${count}`;
+}
