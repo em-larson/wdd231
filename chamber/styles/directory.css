@@ -1,0 +1,59 @@
+:root {
+    --mainColor: #003135;
+    --secondaryDark: #024950;
+    --secondaryLight: #AFDDE5;
+    --accentColor: #964734;
+}
+
+body {
+    font-family: "Epunda Slab", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header {
+    background: var(--mainColor);
+    color: var(--secondaryLight);
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+#logo {
+    margin: auto;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 50px;
+    margin: auto;
+    padding: 3rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+#mainNav {
+    display: flex;
+    flex-direction: column;
+    background: var(--secondaryDark);
+}
+
+#mainNav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--secondaryLight);
+    padding: 10px 3rem;
+}
+
+#mainNav a:hover {
+    text-decoration: underline;
+}
+
+#mainNav.open a {
+    display: block;
+}

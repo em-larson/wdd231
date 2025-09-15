@@ -1,0 +1,16 @@
+{
+    "familyName": "Stalder",
+    "dateMovedIn": "August 7, 1992",
+    "numberOfFamily": 7,
+    "visited": false,
+    "memberInfo": [
+        {
+            "name": "Jessica",
+            "age": 32
+        },
+        {
+            "name": "Kimberly",
+            "age": 28
+        }
+    ]
+}
