@@ -5,7 +5,7 @@
             "address": "2436 Grant Ave, Ogden, UT 84401",
             "phone": "(801) 689-2626",
             "website": "http://www.wasatchroasting.com",
-            "image": ""
+            "image": "images/wasatchLogo.png"
         },
         {
             "name": "Beehive Naturals",
@@ -19,7 +19,7 @@
             "address": "4079 Riverdale Rd, Ogden, UT 84405-1517",
             "phone": "(801) 627-7077",
             "website": "http://www.olivegarden.com/",
-            "image": ""
+            "image": "images/olivegardenlogo.png"
         },
         {
             "name": "Grounds for Coffee",
@@ -61,7 +61,7 @@
             "address": "529 25th Street, Ogden, UT 84401",
             "phone": "(801) 392-2282",
             "website": "https://www.thelotuscafe.co/",
-            "image": "the_lotus_cafe.jpg"
+            "image": "images/lotuslogo.png"
         }
     ]
 }

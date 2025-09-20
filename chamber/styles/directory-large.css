@@ -1,0 +1,22 @@
+@media screen and (min-width: 700px) {
+    h2 {
+        font-size: 80px;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+
+    }
+
+    #mainNav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mainNav a {
+        padding: 10px 3rem;
+
+    }
+}
