@@ -11,9 +11,11 @@ body {
     font-style: normal;
 }
 
-header {
+/*header stuff including responsive menu */
+
+#head {
     background: var(--mainColor);
-    color: var(--secondaryLight);
+    color: white;
     display: grid;
     grid-template-columns: auto 1fr;
 }
@@ -24,9 +26,24 @@ header {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 40px;
     margin: auto;
-    padding: 3rem;
+    padding: 3rem 5rem 3rem 0rem;
+
+}
+
+nav {
+    background: none;
+    display: block;
+}
+
+#menu {
+    display: flex;
+    margin: auto;
+    font-size: 40px;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 }
 
 #menu::before {
@@ -38,8 +55,9 @@ h2 {
 }
 
 #mainNav {
-    display: flex;
+    display: none;
     flex-direction: column;
+    justify-content: space-around;
     background: var(--secondaryDark);
 }
 
@@ -54,6 +72,73 @@ h2 {
     text-decoration: underline;
 }
 
+#mainNav.open {
+    display: flex;
+}
+
 #mainNav.open a {
     display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* card details */
+
+main {
+    background: var(--secondaryLight);
+    padding: 2rem;
+    margin: 1rem;
+    width: 90%;
+}
+
+#displayStyle {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+#cardDisplay,
+#listDisplay {
+    padding: 1rem 2rem;
+    box-shadow: 1px 1px 3px 1px #003135;
+    margin: .3rem;
+
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+#cards.list {
+    display: block;
+}
+
+#cards section {
+    border: 2px solid black;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px 2px #003135;
+    width: 320px;
+    background: white;
+}
+
+.businessurl {
+    text-decoration: underline;
+    color: var(--secondaryDark);
+}
+
+/* Footer Infomation */
+
+footer {
+    background: var(--mainColor);
+    color: white;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
 }

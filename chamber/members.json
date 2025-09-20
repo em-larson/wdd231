@@ -1,0 +1,67 @@
+{
+    "businesses": [
+        {
+            "name": "Wasatch Roasting Company",
+            "address": "2436 Grant Ave, Ogden, UT 84401",
+            "phone": "(801) 689-2626",
+            "website": "http://www.wasatchroasting.com",
+            "image": ""
+        },
+        {
+            "name": "Beehive Naturals",
+            "address": "186 25th Street, Ogden, UT 84401",
+            "phone": "(801) 917-9585",
+            "website": "https://www.beehivenaturals.com",
+            "image": "images/behivelogo.png"
+        },
+        {
+            "name": "Olive Garden (Ogden, UT)",
+            "address": "4079 Riverdale Rd, Ogden, UT 84405-1517",
+            "phone": "(801) 627-7077",
+            "website": "http://www.olivegarden.com/",
+            "image": ""
+        },
+        {
+            "name": "Grounds for Coffee",
+            "address": "3005 Harrison Blvd, Ogden, UT 84403",
+            "phone": "(801) 621-3014",
+            "website": "https://www.groundsforcoffee.com/",
+            "image": "images/groundslogo.jpg"
+        },
+        {
+            "name": "Union Station",
+            "address": "2501 Wall Avenue, Ogden, UT 84401",
+            "phone": "(801) 629-8680",
+            "website": "https://www.ogdencity.gov/2277/Union-Station",
+            "image": "images/unionlogo.png"
+        },
+        {
+            "name": "Daily Rise Coffee",
+            "address": "2865 Washington Blvd, Ogden, UT 84401",
+            "phone": "(801) 393-4581",
+            "website": "https://dailyrisecoffee.com/",
+            "image": "images/dailyRiseLogo.png"
+        },
+        {
+            "name": "Great Harvest Bread Company",
+            "address": "272 25th Street, Ogden, UT 84401",
+            "phone": "(801) 394-6800",
+            "website": "https://www.greatharvest.com/",
+            "image": "images/harvestlogo.png"
+        },
+        {
+            "name": "Lavender Vinyl",
+            "address": "123 25th Street, Ogden, UT 84401",
+            "phone": "(385) 240-0336",
+            "website": "https://www.lavendervinyl.com/",
+            "image": "images/lavenderlogo.webp"
+        },
+        {
+            "name": "The Lotus Café, Yoga Studio & Shop",
+            "address": "529 25th Street, Ogden, UT 84401",
+            "phone": "(801) 392-2282",
+            "website": "https://www.thelotuscafe.co/",
+            "image": "the_lotus_cafe.jpg"
+        }
+    ]
+}
