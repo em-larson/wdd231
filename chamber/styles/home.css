@@ -1,0 +1,185 @@
+:root {
+    --mainColor: #003135;
+    --secondaryDark: #024950;
+    --secondaryLight: #AFDDE5;
+    --accentColor: #964734;
+}
+
+body {
+    font-family: "Epunda Slab", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*header stuff including responsive menu */
+
+#head {
+    background: var(--mainColor);
+    color: white;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+#logo {
+    margin: auto;
+    padding: 1rem;
+}
+
+h2 {
+    font-size: 40px;
+    margin: auto;
+    padding: 3rem 5rem 3rem 0rem;
+
+}
+
+nav {
+    background: none;
+    display: block;
+}
+
+#menu {
+    display: flex;
+    margin: auto;
+    font-size: 40px;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+#mainNav {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--secondaryDark);
+}
+
+#mainNav a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--secondaryLight);
+    padding: 10px 0;
+}
+
+#mainNav a:hover {
+    text-decoration: underline;
+}
+
+#mainNav.open {
+    display: flex;
+}
+
+#mainNav.open a {
+    display: block;
+    width: 99%;
+    text-align: center;
+    border: 1px solid var(--mainColor);
+}
+
+/*Hero section */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/ogdenhero.avif");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+
+}
+
+.cta {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px 30px;
+    background-color: #f47758;
+    color: black;
+    font-size: medium;
+    box-shadow: 2px 2px 5px 1px #003135;
+}
+
+/*Home Section */
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+#events {
+    background: var(--secondaryLight);
+    grid-column: 1/2;
+    padding: .5rem 0 2rem 0;
+    /* max-width: fit-content; */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    flex: 0 0 300px */
+}
+
+.event {
+    background: white;
+    box-shadow: 1px 1px 3px 1px #003135;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+h3 {
+    padding: 1rem 0 0 1rem;
+    background: var(--secondaryLight);
+    margin: 0;
+}
+
+/* Weather Section */
+
+.center {
+    text-align: center;
+}
+
+aside {
+    background: var(--secondaryLight);
+}
+
+/*membership info*/
+#members {
+    grid-column: 1/3;
+    margin-bottom: 1rem;
+}
+
+#membership {
+    display: flex;
+    justify-content: space-around;
+    background: var(--secondaryLight);
+    flex-wrap: wrap;
+}
+
+#membership section {
+    text-align: center;
+    align-content: center;
+}
+
+/* Footer Infomation */
+
+footer {
+    background: var(--mainColor);
+    color: white;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+}
+
+#socials a {
+    text-decoration: none;
+}

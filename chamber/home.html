@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Emily Larson Chamber of Commerce Project</title>
+    <meta name="description"
+        content="Chamber of commerce page, showcasing local businesses and advertising oportunities among other things.">
+    <meta name="author" content="Emily Larson">
+    <link rel="stylesheet" href="styles/home.css" defer>
+    <link rel="stylesheet" href="styles/home-small.css" defer>
+    <link rel="stylesheet" href="styles/directory-large.css" defer>
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:title" content="Ogden Chamber of Commerce Local Directory Page">
+    <meta property="og:description"
+        content="Contains information about the local businesses in the area. Also contains lists of local groups.">
+    <meta property="og:image" content="https://em-larson.github.io/wdd231/chamber/directory/ogp.jpg">
+    <meta property="og:url" content="https://em-larson.github.io/wdd231/chamber/directory">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <img src="images/logo.webp" alt="Chamber of Commerce Logo" id="logo">
+            <h2>Ogden Chamber of Commerce</h2>
+            <button type="button" id="menu" aria-label="Open navigation menu"></button>
+        </div>
+        <nav id="mainNav">
+            <a class="hyperlink" href="home.html">Home</a>
+            <a class="hyperlink" href="directory.html">Directory</a>
+            <a class="hyperlink" href="join.html">Join</a>
+            <a class="hyperlink" href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero">
+            <button type="text" class="cta">Become a Member</button>
+        </div>
+
+        <h1>Home</h1>
+        <section class="grid">
+            <section>
+                <h3>Current Events - September 2025</h3>
+                <div id="events">
+                    <section class="event">
+                        <h4>Sept 20 - Huntsville Marathon</h4>
+                        <p>Monte Cristo to Huntsville Park</p>
+                        <p> 200 S 7400 E Huntsville, UT 84317</p>
+                    </section>
+                    <section class="event">
+                        <h4>Sept 20 - Guided Bird Walk</h4>
+                        <p>Ogden Nature Center</p>
+                        <p>966 W 12th Street, Ogden UT 84401</p>
+                    </section>
+                    <section class="event">
+                        <h4>Sept 21 - Chamber Orchestra Opening Concert</h4>
+                        <p>Peery's Egyptian Theater</p>
+                        <p>2415 Washington Blvd. Ogden UT 84401</p>
+                    </section>
+                    <section class="event">
+                        <h4>Sept 23 - Tarot Nights</h4>
+                        <p>Two-Bit Bistro</p>
+                        <p>2510 Washington Blvd. Ogden UT 84401</p>
+                    </section>
+                </div>
+            </section>
+            <aside>
+                <h3>Weather</h3>
+                <div class="event center">
+                    <h4>Current Weather</h4>
+                    <p> <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div class="event center">
+                    <h4>Weather Forecast</h4>
+                    <!-- <p id="forecast"></p> -->
+                    <figure>
+                        <p>Tomorrow's Weather</p>
+                        <img id="forecast-tomorrow" src="" alt="">
+                        <figcaption id="tomorrow"></figcaption>
+                    </figure>
+                </div>
+                <!--Need to still build this section of the html. I don't have anything built to do the forecast with.-->
+            </aside>
+            <section id="members">
+                <h3>Meet some Members!</h3>
+                <div id="membership"></div>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <p>Ogden City of Commerce</p>
+            <p>2380 Washington Blvd #290 </p>
+            <p>Ogden, UT 84401</p>
+            <p>801-621-8300</p>
+        </div>
+        <div>
+            <nav id="socials">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://github.com">
+                    <img src="images/github.svg" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/?trk=guest_homepage-jobseeker_nav-header-logo">
+                    <img src="images/linkedin.svg" alt="linkedin">
+                </a>
+            </nav>
+        </div>
+        <div>
+            <p>WDD231 Chamber of Commerce Project</p>
+            <p id="copyright"></p>
+            <p id="modified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

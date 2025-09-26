@@ -1,0 +1,19 @@
+@media screen and (max-width: 700px) {
+
+    .grid {
+        display: block;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    #membership {
+        flex-direction: column;
+    }
+
+    aside {
+        padding-bottom: .5rem;
+    }
+
+}
