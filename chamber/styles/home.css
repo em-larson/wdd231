@@ -109,6 +109,10 @@ nav {
 
 /*Home Section */
 
+h1 {
+    grid-column: 1/3;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
