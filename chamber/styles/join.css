@@ -3,7 +3,7 @@
     :root {
         --mainColor: #003135;
         --secondaryDark: #024950;
-        --secondaryLight: #51848d;
+        --secondaryLight: #AFDDE5;
         --accentColor: #f47758;
     }
 
@@ -12,7 +12,7 @@
     }
 
     #levels {
-        background-color: var(--secondaryLight);
+        background-color: #AFDDE5;
         width: 100%;
         padding: 1rem 0;
 
@@ -22,4 +22,9 @@
         width: 80%;
         margin: 1rem auto;
     }
+
+    input {
+        height: 40px;
+    }
+    
 }
