@@ -99,6 +99,10 @@ dialog {
     box-shadow: 10px 10px 20px;
 }
 
+dialog::backdrop {
+  background: rgba(0,0,0,0.5);
+}
+
 /*thank you form formatting*/
 
 #results {
