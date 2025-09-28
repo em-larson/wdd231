@@ -101,7 +101,13 @@ function buildList() {
         let listItem = document.createElement("li");
         listItem.innerHTML = `${symbol} ${course.subject} ${course.number}`;
 
+        listItem.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
         listContainer.appendChild(listItem);
+
+
     });
 };
 
@@ -143,4 +149,29 @@ function addCredits() {
         count = count + course.credits;
     });
     creditCount.innerHTML = `The total credits for the courses listed above is ${count}`;
+}
+
+
+//Add functionality to the new modal addition //
+
+const courseDetails = document.querySelector('#modal');
+
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificates:</strong> ${course.certificate}</p>
+    <p> ${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
 }

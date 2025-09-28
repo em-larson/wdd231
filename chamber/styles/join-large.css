@@ -1,0 +1,75 @@
+:root {
+    --mainColor: #003135;
+    --secondaryDark: #024950;
+    --secondaryLight: #AFDDE5;
+    --accentColor: #f47758;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+h1 {
+    grid-column: 1/3;
+}
+
+form {
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    background-color: var(--secondaryLight);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+fieldset fieldset {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+}
+
+fieldset fieldset :nth-child(odd) {
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+}
+
+#submit-button {
+    height: 40px;
+    background-color: var(--accentColor);
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+#levels {
+    margin: 70px auto;
+    width: 80%;
+}
+
+#levels section {
+    background-color: var(--accentColor);
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 3px 3px 5px #003135;
+    text-align: center;
+}
+
+#levels section button {
+    width: 100%;
+    height: 30px;
+}

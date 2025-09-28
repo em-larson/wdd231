@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Emily Larson Chamber of Commerce Project</title>
+    <meta name="description"
+        content="Chamber of commerce page, showcasing local businesses and advertising oportunities among other things.">
+    <meta name="author" content="Emily Larson">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <meta property="og:title" content="Ogden Chamber of Commerce Local Directory Page">
+    <meta property="og:description"
+        content="Contains information about the local businesses in the area. Also contains lists of local groups.">
+    <meta property="og:image" content="https://em-larson.github.io/wdd231/chamber/directory/ogp.jpg">
+    <meta property="og:url" content="https://em-larson.github.io/wdd231/chamber/directory">
+
+    <script src="" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <img src="images/logo.webp" alt="Chamber of Commerce Logo" id="logo">
+            <h2>Ogden Chamber of Commerce</h2>
+            <button type="button" id="menu" aria-label="Open navigation menu"></button>
+        </div>
+        <nav id="mainNav">
+            <a class="hyperlink" href="index.html">Home</a>
+            <a class="hyperlink" href="directory.html">Directory</a>
+            <a class="hyperlink" href="join.html">Join</a>
+            <a class="hyperlink" href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join Us</h1>
+        <section id="form">
+            <form method="get" action="thankyou.html">
+                <h3>Become a Member</h3>
+                <fieldset>
+                    <Legend>User Information</Legend>
+                    <label for="fname" class="label-title">First Name*:</label>
+                    <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+                    <label for="lname" class="label-title">Last Name*:</label>
+                    <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+                    <label for="title" class="label-title">Organizational Title:</label>
+                    <input type="text" id="title" name="title" autocomplete="organization-title"
+                        pattern="[A-Za-z\- ]{7,}">
+                    <label for="email" class="label-title">Email*:</label>
+                    <input type="email" id="email" name="email" autocorrect="email" required>
+                    <label for="phone" class="label-title">Phone Number*:</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9]" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label for="organization" class="label-title">Business/Organization Name*:</label>
+                    <input type="text" id="organization" name="organization" autocomplete="organization" required>
+                    <fieldset>
+                        <legend>Membership Level*:</legend>
+                        <input class="radio-button" type="radio" id="level-np" name="level" value="NP" required>
+                        <label for="level-np">Non-Profit Membership (free-must be a qualifying business)</label>
+                        <input class="radio-button" type="radio" id="level-bronze" name="level" value="bronze">
+                        <label for="level-bronze">Bronze Level ($30.00 monthly)</label>
+                        <input class="radio-button" type="radio" id="level-silver" name="level" value="silver">
+                        <label for="level-silver">Silver Level ($80.00 monthly)</label>
+                        <input class="radio-button" type="radio" id="level-gold" name="level" value="gold">
+                        <label for="level-gold">Gold Level (your first-born child)</label>
+
+                        <!-- <legend>Membership Level*:</legend>
+                        <label class="radio-label">
+                            <input type="radio" name="level" value="NP" required>
+                            Non-Profit Membership (free—must be a qualifying business)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="level" value="bronze">
+                            Bronze Level ($30.00 monthly)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="level" value="silver">
+                            Silver Level ($80.00 monthly)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="level" value="gold">
+                            Gold Level (your first-born child)
+                        </label> -->
+                    </fieldset>
+                    <label for="business-description" class="label-title">Business Description</label>
+                    <textarea id="business-description" name="business-description" rows="7"
+                        placeholder="A brief description of your business..."></textarea>
+                    <input type="hidden" name="time-stamp" id="time-stamp">
+                    <input type="submit" id="submit-button" value="Join">
+                </fieldset>
+
+            </form>
+        </section>
+        <section id="levels">
+            <h3>Membership Levels</h3>
+            <section>
+                <h4>Non-Profit Membership Level</h4>
+                <button type="button" id="np-membership">Learn More</button>
+            </section>
+            <section>
+                <h4>Bronze Membership Level</h4>
+                <button type="button" id="bronze-membership">Learn More</button>
+            </section>
+            <section>
+                <h4>Silver Membership Level</h4>
+                <button type="button" id="silver-membership">Learn More</button>
+            </section>
+            <section>
+                <h4>Gold Membership Level</h4>
+                <button type="button" id="gold-membership">Learn More</button>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <p>Ogden City of Commerce</p>
+            <p>2380 Washington Blvd #290 </p>
+            <p>Ogden, UT 84401</p>
+            <p>801-621-8300</p>
+        </div>
+        <div>
+            <nav id="socials">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.svg" alt="facebook">
+                </a>
+                <a href="https://github.com">
+                    <img src="images/github.svg" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/?trk=guest_homepage-jobseeker_nav-header-logo">
+                    <img src="images/linkedin.svg" alt="linkedin">
+                </a>
+            </nav>
+        </div>
+        <div>
+            <p>WDD231 Chamber of Commerce Project</p>
+            <p id="copyright"></p>
+            <p id="modified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

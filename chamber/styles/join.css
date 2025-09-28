@@ -1,0 +1,25 @@
+@media screen and (max-width: 700px) {
+
+    :root {
+        --mainColor: #003135;
+        --secondaryDark: #024950;
+        --secondaryLight: #AFDDE5;
+        --accentColor: #f47758;
+    }
+
+    main {
+        display: block;
+    }
+
+    #levels {
+        background-color: var(--secondaryLight);
+        width: 100%;
+        padding: 1rem 0;
+
+    }
+
+    #levels section {
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
