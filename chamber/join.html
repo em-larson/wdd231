@@ -24,7 +24,7 @@
     <meta property="og:image" content="https://em-larson.github.io/wdd231/chamber/directory/ogp.jpg">
     <meta property="og:url" content="https://em-larson.github.io/wdd231/chamber/directory">
 
-    <script src="" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
     <main>
         <h1>Join Us</h1>
         <section id="form">
-            <form method="get" action="thankyou.html">
+            <form method="get" action="thankyou.html" id="membershipform">
                 <h3>Become a Member</h3>
                 <fieldset>
                     <Legend>User Information</Legend>
@@ -59,7 +59,7 @@
                     <label for="email" class="label-title">Email*:</label>
                     <input type="email" id="email" name="email" autocorrect="email" required>
                     <label for="phone" class="label-title">Phone Number*:</label>
-                    <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9]" required>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9]{7,11}" required>
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
@@ -75,24 +75,6 @@
                         <label for="level-silver">Silver Level ($80.00 monthly)</label>
                         <input class="radio-button" type="radio" id="level-gold" name="level" value="gold">
                         <label for="level-gold">Gold Level (your first-born child)</label>
-
-                        <!-- <legend>Membership Level*:</legend>
-                        <label class="radio-label">
-                            <input type="radio" name="level" value="NP" required>
-                            Non-Profit Membership (free—must be a qualifying business)
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="level" value="bronze">
-                            Bronze Level ($30.00 monthly)
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="level" value="silver">
-                            Silver Level ($80.00 monthly)
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="level" value="gold">
-                            Gold Level (your first-born child)
-                        </label> -->
                     </fieldset>
                     <label for="business-description" class="label-title">Business Description</label>
                     <textarea id="business-description" name="business-description" rows="7"
@@ -107,19 +89,67 @@
             <h3>Membership Levels</h3>
             <section>
                 <h4>Non-Profit Membership Level</h4>
-                <button type="button" id="np-membership">Learn More</button>
+                <button type="button" data-modal="npModal">Learn More</button>
+                <dialog id="npModal">
+                    <h3>Non-Profit Membership Level</h3>
+                    <p><strong>Cost: </strong>Free for qualifying businesses</p>
+                    <p><strong>Benefits:</strong></p>
+                    <ul>
+                        <li>Directory listing with nonprofit designation</li>
+                        <li>Promotion of fundraising events on Chamber calendar/website</li>
+                        <li>Access to networking events and community partnerships</li>
+                    </ul>
+                    <button class="closeModal">Close</button>
+                </dialog>
             </section>
             <section>
                 <h4>Bronze Membership Level</h4>
-                <button type="button" id="bronze-membership">Learn More</button>
+                <button type="button" data-modal="bronzeModal">Learn More</button>
+                <dialog id="bronzeModal">
+                    <h3>Bronze Membership Level</h3>
+                    <p><strong>Cost: </strong>$30.00 monthly</p>
+                    <p><strong>Benefits:</strong></p>
+                    <ul>
+                        <li>Basic business listing in Chamber's online directory</li>
+                        <li>Invitation to Chamber networking mixers & monthly luncheons</li>
+                        <li>Eligibility for inclusion in Chamber-wide email updates</li>
+                        <li>Discounted rates for attending Chamber events/workshops</li>
+                    </ul>
+                    <button class="closeModal">Close</button>
+                </dialog>
             </section>
             <section>
                 <h4>Silver Membership Level</h4>
-                <button type="button" id="silver-membership">Learn More</button>
+                <button type="button" data-modal="silverModal">Learn More</button>
+                <dialog id="silverModal">
+                    <h3>Silver Membership Level</h3>
+                    <p><strong>Cost: </strong>$80.00 monthly</p>
+                    <p><strong>Benefits:</strong></p>
+                    <ul>
+                        <li>Enhanced listing in the Chamber's online directory (with logo & link)</li>
+                        <li>Discounted booth fee at Chamber expos/markets</li>
+                        <li>Two spotlight posts per year on Chamber social media</li>
+                        <li>Access to Chamber referral program</li>
+                        <li>Invitations to member-only networking events & trainings</li>
+                    </ul>
+                    <button class="closeModal">Close</button>
+                </dialog>
             </section>
             <section>
                 <h4>Gold Membership Level</h4>
-                <button type="button" id="gold-membership">Learn More</button>
+                <button type="button" data-modal="goldModal">Learn More</button>
+                <dialog id="goldModal">
+                    <p><strong>Cost: </strong>$80.00 monthly</p>
+                    <p><strong>Benefits:</strong></p>
+                    <ul>
+                        <li>Featured listing at the top of the Chamber's online directory</li>
+                        <li>Priority placement in Chamber publications & promotional materials</li>
+                        <li>Complimentary sponsorship of one major Chamber event per year</li>
+                        <li>Dedicated spotlight post on Chamber's social media channels (quarterly)</li>
+                        <li>Complimentary use of Chamber meeting room space</li>
+                    </ul>
+                    <button class="closeModal">Close</button>
+                </dialog>
             </section>
         </section>
 
