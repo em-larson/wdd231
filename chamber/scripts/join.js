@@ -51,7 +51,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const tempTimestamp = new Date().toLocaleString();
 
     localStorage.setItem('timestamp', tempTimestamp);
-    //window.location.href = "thankyou.html";
 });
 
 

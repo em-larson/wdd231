@@ -28,6 +28,10 @@
         "button";
 }
 
+#discoverCards section:hover {
+    box-shadow: 3px 3px 7px 2px #003135;
+}
+
 #discoverCards section h2 {
     grid-area: name;
 }

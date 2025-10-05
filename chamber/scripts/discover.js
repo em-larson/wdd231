@@ -28,7 +28,7 @@ const fetchDiscoverData = async () => {
     } catch (error) {
         let errormessage = document.createElement("h3");
         errormessage.innerHTML = "Information could not be loaded.",
-        discovercards.appendChild(errormessage);
+            discovercards.appendChild(errormessage);
     }
 }
 
@@ -39,7 +39,7 @@ const displayDiscoverCard = (discover) => {
         let card = document.createElement("section");
         let name = document.createElement("h2");
         let pic = document.createElement("img");
-        let address= document.createElement("address");
+        let address = document.createElement("address");
         let description = document.createElement("p");
         let learn = document.createElement("button");
 
@@ -62,3 +62,55 @@ const displayDiscoverCard = (discover) => {
         discovercards.appendChild(card);
     });
 }
+
+//last visited code//
+
+const lastvisited = document.querySelector('#lastvisited');
+const msToDays = 86400000;
+
+window.addEventListener('DOMContentLoaded', () => {
+
+    let visits = Number (localStorage.getItem('visits')) || 0;
+
+    if (visits === 0) {
+        const firstvisited = Date.now();
+        localStorage.setItem('firstvisit', firstvisited);
+
+        let statement = document.createElement('p');
+        statement.innerHTML = "Welcome! Let us know if you have any questions."
+        lastvisited.appendChild(statement);
+
+    }
+
+    else {
+        let recentvisit = Date.now();
+        let firstvisited = localStorage.getItem('firstvisit')
+
+        let dayssince = (recentvisit - firstvisited) / msToDays;
+
+        if (dayssince > 2) {
+            let statement = document.createElement("p");
+            statement.innerHTML = `You last visted ${dayssince} days ago.`;
+                    lastvisited.appendChild(statement);
+
+        }
+
+        else if (dayssince > 1) {
+            let statement = document.createElement('p');
+            statement.innerHTML = `You last visited ${dayssince} day ago`;
+                    lastvisited.appendChild(statement);
+
+        }
+
+        else if (dayssince < 1) {
+            let statement = document.createElement('p');
+            statement.innerHTML = "Back so soon! Awesome!"
+                    lastvisited.appendChild(statement);
+
+        }
+
+    }
+    visits +=1;
+    localStorage.setItem('visits', visits);
+});
+
