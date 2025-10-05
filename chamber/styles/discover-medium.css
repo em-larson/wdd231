@@ -1,0 +1,21 @@
+@media screen and (min-width: 40rem) {
+
+    #discoverCards section {
+        width: auto;
+        justify-content: left;
+        grid-template-areas:
+            "picture name"
+            "picture description"
+            "picture address"
+            "picture button"
+    }
+}
+
+#discoverCards section img {
+    padding-right: 1rem;
+}
+
+#discoverCards section button {
+    max-width: 300px;
+    margin: 0;
+}

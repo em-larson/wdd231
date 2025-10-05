@@ -1,0 +1,53 @@
+:root {
+    --mainColor: #003135;
+    --secondaryDark: #024950;
+    --secondaryLight: #AFDDE5;
+    --accentColor: #f47758;
+}
+
+#discoverCards {
+    background-color: var(--secondaryLight);
+    margin: 1rem .3rem;
+    padding: 1rem 2rem;
+}
+
+#discoverCards section {
+    background-color: white;
+    border: solid var(--mainColor) 2px;
+    margin: 1rem auto;
+    padding: 1rem .5rem;
+    width: 300px;
+    box-shadow: 1px 1px 3px 1px #003135;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "picture"
+        "description"
+        "address"
+        "button";
+}
+
+#discoverCards section h2 {
+    grid-area: name;
+}
+
+#discoverCards section img {
+    grid-area: picture;
+}
+
+#discoverCards section p {
+    grid-area: description;
+}
+
+#discoverCards section address {
+    grid-area: address;
+}
+
+#discoverCards section button {
+    grid-area: button;
+    width: 50%;
+    margin: .5rem auto;
+    padding: .5rem;
+
+}

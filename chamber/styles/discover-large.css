@@ -1,0 +1,14 @@
+@media screen and (min-width: 90rem) {
+
+    #discoverCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+
+    }
+
+    #discoverCards section {
+        grid-template-columns: 1fr 2fr;
+        max-width: 60rem;
+    }
+}

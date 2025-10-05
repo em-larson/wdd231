@@ -37,10 +37,11 @@ fetchDiscoverData();
 const displayDiscoverCard = (discover) => {
     discover.forEach((item) => {
         let card = document.createElement("section");
-        let name = document.createElement("h3");
+        let name = document.createElement("h2");
         let pic = document.createElement("img");
-        let address= document.createElement("p");
+        let address= document.createElement("address");
         let description = document.createElement("p");
+        let learn = document.createElement("button");
 
         name.innerHTML = `${item.name}`
 
@@ -50,11 +51,13 @@ const displayDiscoverCard = (discover) => {
 
         address.innerHTML = `${item.address}`;
         description.innerHTML = `${item.description}`;
+        learn.innerHTML = "Learn More";
 
         card.appendChild(name);
         card.appendChild(pic);
         card.appendChild(address);
         card.appendChild(description);
+        card.appendChild(learn);
 
         discovercards.appendChild(card);
     });

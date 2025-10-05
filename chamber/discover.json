@@ -10,7 +10,7 @@
             "name": "Peery's Egyptian Theater",
             "address": "2415 Washington Blvd, Ogden, UT 84401",
             "description": "Historic 800-seat performing arts center in downtown Ogden, hosting live theater, music, and film events.",
-            "picture": "images/perrysegyptiantheater.webp"
+            "picture": "images/peerysegyptiantheater.webp"
         },
         {
             "name": "Ogden Union Station (Utah State Railroad Museum, etc.)",
@@ -27,19 +27,19 @@
         {
             "name": "Waterfall Canyon Trail",
             "address": "29th Street Trailhead (approx. 2985 Buchanan Ave, Ogden, UT 84403)",
-            "description": "Popular ~2.4-mile round-trip hike from the 29th Street trailhead up the canyon to a ~200 ft waterfall. :contentReference[oaicite:1]{index=1}",
+            "description": "Popular ~2.4-mile round-trip hike from the 29th Street trailhead up the canyon to a ~200 ft waterfall.",
             "picture": "images/waterfallcanyon.webp"
         },
         {
             "name": "Hidden Valley Trail",
-            "address": "22nd Street Trailhead (east end of 22nd St, Ogden, UT) (branches off Indian Trail)",
-            "description": "Strenuous out-and-back (≈ 4.9 mi) trail branching off Indian Trail, accessed from the 22nd Street trailhead, with great views and a 'hidden valley' section. :contentReference[oaicite:2]{index=2}",
+            "address": "22nd Street Trailhead (east end of 22nd St, Ogden, UT)",
+            "description": "Strenuous out-and-back (~4.9 mi) trail branching off Indian Trail, accessed from the 22nd Street trailhead, with great views and a 'hidden valley' section.",
             "picture": "images/hiddenvalley.webp"
         },
         {
             "name": "Beus Canyon Trail",
-            "address": "Beus Canyon Trailhead, E 4600 S, Ogden, UT 84403 (top of 4600 South on east side)",
-            "description": "Trail up Beus Canyon toward Mt. Ogden. Moderate to steep terrain; trail begins near 4600 S and climbs through scenic canyon until saddle near Mt. Ogden. :contentReference[oaicite:3]{index=3}",
+            "address": "Beus Canyon Trailhead, E 4600 S, Ogden, UT 84403",
+            "description": "Trail up Beus Canyon toward Mt. Ogden. Moderate to steep terrain; trail begins near 4600 S and climbs through scenic canyon until saddle near Mt. Ogden.",
             "picture": "images/beuscanyontrail.webp"
         },
         {
