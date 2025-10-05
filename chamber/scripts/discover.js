@@ -48,6 +48,8 @@ const displayDiscoverCard = (discover) => {
         pic.setAttribute('src', item.picture);
         pic.setAttribute('alt', item.name);
         pic.setAttribute('loading', 'lazy');
+        pic.setAttribute('width', '300px');
+        pic.setAttribute('height', '200px');
 
         address.innerHTML = `${item.address}`;
         description.innerHTML = `${item.description}`;
