@@ -1,0 +1,52 @@
+{
+    "discover": [
+        {
+            "name": "Hill Aerospace Museum",
+            "address": "7961 Cottonwood Street, Building 1955, Hill AFB, UT 84056",
+            "description": "A large aviation and aerospace museum with indoor galleries and outdoor air-park exhibits of aircraft, missiles, and artifacts.",
+            "picture": "images/hillairforcebase.webp"
+        },
+        {
+            "name": "Peery's Egyptian Theater",
+            "address": "2415 Washington Blvd, Ogden, UT 84401",
+            "description": "Historic 800-seat performing arts center in downtown Ogden, hosting live theater, music, and film events.",
+            "picture": "images/perrysegyptiantheater.webp"
+        },
+        {
+            "name": "Ogden Union Station (Utah State Railroad Museum, etc.)",
+            "address": "2501 South Wall Avenue, Ogden, UT 84401",
+            "description": "Historic train depot housing multiple museums: railroad, firearms, western heritage, classic cars, and art galleries.",
+            "picture": "images/unionstation.webp"
+        },
+        {
+            "name": "Historic 25th Street",
+            "address": "25th Street between Wall Ave & Washington Blvd, Ogden, UT",
+            "description": "Historic downtown street lined with shops, restaurants, galleries — a cultural hub and walking district.",
+            "picture": "images/historic.webp"
+        },
+        {
+            "name": "Waterfall Canyon Trail",
+            "address": "29th Street Trailhead (approx. 2985 Buchanan Ave, Ogden, UT 84403)",
+            "description": "Popular ~2.4-mile round-trip hike from the 29th Street trailhead up the canyon to a ~200 ft waterfall. :contentReference[oaicite:1]{index=1}",
+            "picture": "images/waterfallcanyon.webp"
+        },
+        {
+            "name": "Hidden Valley Trail",
+            "address": "22nd Street Trailhead (east end of 22nd St, Ogden, UT) (branches off Indian Trail)",
+            "description": "Strenuous out-and-back (≈ 4.9 mi) trail branching off Indian Trail, accessed from the 22nd Street trailhead, with great views and a 'hidden valley' section. :contentReference[oaicite:2]{index=2}",
+            "picture": "images/hiddenvalley.webp"
+        },
+        {
+            "name": "Beus Canyon Trail",
+            "address": "Beus Canyon Trailhead, E 4600 S, Ogden, UT 84403 (top of 4600 South on east side)",
+            "description": "Trail up Beus Canyon toward Mt. Ogden. Moderate to steep terrain; trail begins near 4600 S and climbs through scenic canyon until saddle near Mt. Ogden. :contentReference[oaicite:3]{index=3}",
+            "picture": "images/beuscanyontrail.webp"
+        },
+        {
+            "name": "George S. Eccles Dinosaur Park",
+            "address": "1544 East Park Blvd, Ogden, UT 84401",
+            "description": "Outdoor sculpture park and indoor museum featuring life-size dinosaurs, paleontology exhibits, fossils, and interactive displays.",
+            "picture": "images/dinosaurpark.webp"
+        }
+    ]
+}
