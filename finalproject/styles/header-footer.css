@@ -1,0 +1,63 @@
+header {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+header h2 {
+    font-size: xx-large;
+    align-content: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+    background-color: rgb(52, 49, 49);
+    grid-column: 1/3;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Markazi Text", serif;
+    font-size:x-large;
+    padding: 0 2rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+footer nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*This is stuff that is needed on every page */ 
+
+h1,
+h2,
+h3 {
+    font-family: "Amarante", serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: "Markazi Text", serif;
+    font-size: larger;
+}
+
+/* need to figure out the images on the footer. they aren'tgoing to work. */
