@@ -37,7 +37,7 @@ const displayGroupCards = (dndgroups) => {
     dndgroups.forEach((group) => {
         let card = document.createElement('section');
         let name = document.createElement('h3');
-        let often = document.createElement('h4');
+        let often = document.createElement('p');
         let lookingfor = document.createElement('p');
         let description = document.createElement('p');
         let contact = document.createElement('address');
@@ -61,22 +61,23 @@ const displayGroupCards = (dndgroups) => {
 
         name.innerHTML = `${group.groupName}`;
         often.innerHTML = `${group.howOften}`;
-        lookingfor.innerHTML = `${group.lookingFor}`;
+        lookingfor.innerHTML = `${group.lookingFor} <br> ${group.howOften}`;
         description.innerHTML = `${group.description}`;
         contact.innerHTML = `${group.contact}`
 
         modal.appendChild(name.cloneNode(true));
         modal.appendChild(lookingfor.cloneNode(true));
-        modal.appendChild(often.cloneNode(true));
+        // modal.appendChild(often.cloneNode(true));
         modal.appendChild(contact);
         modal.appendChild(description);
         modal.appendChild(closebutton);
 
         card.appendChild(name);
         card.appendChild(lookingfor);
-        card.appendChild(often);
+        // card.appendChild(often);
         card.appendChild(modal);
         card.appendChild(button);
+        card.appendChild(picture);
 
         groupcard.appendChild(card);
     });
@@ -98,5 +99,12 @@ const displayGroupCards = (dndgroups) => {
     });
 };
 
-//modal code//
+//hidden timestamp code//
+
+window.addEventListener('DOMContentLoaded', () => {
+    const tempTimestamp = new Date().toLocaleString();
+
+    localStorage.setItem('timestamp', tempTimestamp);
+});
+
 
