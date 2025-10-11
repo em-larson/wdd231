@@ -1,20 +1,20 @@
-// //responsive menu code//
-// const hamButton = document.querySelector("#menu");
-// const navigation = document.querySelector("#mainNav");
+//responsive menu code//
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector("#mainNav");
 
-// hamButton.addEventListener('click', () => {
-//     navigation.classList.toggle('open');
-//     hamButton.classList.toggle('open');
-// });
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
 
-// //footer code//
+//footer code//
 
-// const year = new Date().getFullYear();
-// const month = new Date().getMonth() + 1;
-// const day = new Date().getDate();
+const year = new Date().getFullYear();
+const month = new Date().getMonth() + 1;
+const day = new Date().getDate();
 
-// document.getElementById("copyright").innerHTML = `&copy ${year} | Emily Larson | Utah, USA`;
-// document.getElementById('modified').textContent = `Date Modified: ${month}/${day}/${year}`;
+document.getElementById("copyright").innerHTML = `&copy ${year} | Emily Larson | Utah, USA`;
+document.getElementById('modified').textContent = `Date Modified: ${month}/${day}/${year}`;
 
 //create group cards//
 const groupcard = document.querySelector('#groups');

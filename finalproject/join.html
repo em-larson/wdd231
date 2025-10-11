@@ -23,7 +23,8 @@
     <header>
         <img src="images/logo.png" alt="club logo" width="200px">
         <h2>Ogden D&D Compendium</h2>
-        <nav>
+        <button type="button" id="menu" aria-label="Open navigation menu"></button>
+        <nav id="mainNav">
             <a href="home.html">Home</a>
             <a href="join.html">Join a Group</a>
             <a href="store.html">Store</a>
@@ -55,7 +56,8 @@
                 <label for="schedule" class="label-title">Availability*:</label>
                 <input type="text" id="schedule" name="schedule" required>
                 <label for="description" class="label-title">Description*:</label>
-                <textarea id="description" name="description" rows="7" placeholder="A brief description of the group or campaign..."></textarea>
+                <textarea id="description" name="description" rows="7"
+                    placeholder="A brief description of the group or campaign..."></textarea>
                 <label for="contact" class="label-title">Contact Information*:</label>
                 <input type="text" id="contact" name="contact" placeholder="email or phone..." required>
             </fieldset>
