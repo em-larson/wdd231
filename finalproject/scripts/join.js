@@ -27,7 +27,7 @@ const fetchGroupData = async () => {
     } catch (error) {
         let errormessage = document.createElement('h3');
         errormessage.innerHTML = "Group Data Could Not Be Loaded";
-        groupcard.appendchild(errormessage);
+        groupcard.appendChild(errormessage);
     }
 }
 
@@ -40,17 +40,63 @@ const displayGroupCards = (dndgroups) => {
         let often = document.createElement('h4');
         let lookingfor = document.createElement('p');
         let description = document.createElement('p');
+        let contact = document.createElement('address');
+        let modal = document.createElement('dialog');
+        let button = document.createElement('button');
+        let closebutton = document.createElement('button');
+        let picture = document.createElement('img');
+
+        picture.setAttribute('loading', 'lazy');
+        picture.setAttribute('src', group.picture);
+        picture.setAttribute('alt', 'colored dice');
+
+        button.classList.add('groupModal');
+        button.innerHTML = 'Learn More';
+        button.setAttribute('type', 'button');
+        button.setAttribute('data-modal', `${group.groupName}`);
+        modal.id = `${group.groupName}`;
+
+        closebutton.classList.add('closeModal');
+        closebutton.innerHTML = 'Close';
 
         name.innerHTML = `${group.groupName}`;
         often.innerHTML = `${group.howOften}`;
         lookingfor.innerHTML = `${group.lookingFor}`;
         description.innerHTML = `${group.description}`;
+        contact.innerHTML = `${group.contact}`
+
+        modal.appendChild(name.cloneNode(true));
+        modal.appendChild(lookingfor.cloneNode(true));
+        modal.appendChild(often.cloneNode(true));
+        modal.appendChild(contact);
+        modal.appendChild(description);
+        modal.appendChild(closebutton);
 
         card.appendChild(name);
         card.appendChild(lookingfor);
         card.appendChild(often);
-        card.appendChild(description);
+        card.appendChild(modal);
+        card.appendChild(button);
 
         groupcard.appendChild(card);
     });
+
+    const modalbutton = document.querySelectorAll('button[data-modal]');
+
+    modalbutton.forEach(button => {
+        button.addEventListener('click', () => {
+            const modalID = button.getAttribute('data-modal');
+            const modal = document.getElementById(modalID);
+            modal.showModal();
+        });
+    });
+
+    document.querySelectorAll('.closeModal').forEach(closeBtn => {
+        closeBtn.addEventListener('click', (e) => {
+            e.target.closest('dialog').close();
+        });
+    });
 };
+
+//modal code//
+

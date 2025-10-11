@@ -1,64 +1,84 @@
 {
-    "groups": [
-        {
-            "groupName": "The Silver Griffins",
-            "description": "A high-fantasy campaign set in a homebrew world full of ancient ruins and rival guilds.",
-            "lookingFor": "DM looking for 2 players",
-            "howOften": "Weekly on Friday nights"
-        },
-        {
-            "groupName": "Critical Missfits",
-            "description": "Casual, roleplay-focused group that just wrapped up 'Curse of Strahd' and is ready for a new adventure.",
-            "lookingFor": "Group seeking a new DM",
-            "howOften": "Flexible scheduling, prefer weekends"
-        },
-        {
-            "groupName": "The Dragon's Den Delvers",
-            "description": "Currently running 'Lost Mine of Phandelver'. New players welcome!",
-            "lookingFor": "Group looking for 1-2 players",
-            "howOften": "Every other Sunday afternoon"
-        },
-        {
-            "groupName": "The Wandering Dice",
-            "description": "Three friends looking to start their first ever campaign. Open to any setting or system.",
-            "lookingFor": "New players seeking a DM",
-            "howOften": "Open schedule, prefer weekday evenings"
-        },
-        {
-            "groupName": "Echoes of Elaris",
-            "description": "A darker, political intrigue campaign inspired by Game of Thrones. Heavy on roleplay, light on combat.",
-            "lookingFor": "DM seeking experienced players",
-            "howOften": "Thursday evenings"
-        },
-        {
-            "groupName": "Goblin Snacks Anonymous",
-            "description": "Lighthearted and comedic campaign, full of creative problem-solving and chaos.",
-            "lookingFor": "Group needs 1 more chaotic adventurer",
-            "howOften": "Mondays at The Boardwalk Café"
-        },
-        {
-            "groupName": "The Feywild Fellowship",
-            "description": "A whimsical, exploration-based story set in the Feywild. Perfect for imaginative players.",
-            "lookingFor": "DM seeking 3-4 players",
-            "howOften": "Biweekly on Saturday mornings"
-        },
-        {
-            "groupName": "Rogues & Remedies",
-            "description": "Healer main with 5 years of experience seeking a mid-level campaign. Can play online or in-person.",
-            "lookingFor": "Player looking for a group",
-            "howOften": "Available weekends"
-        },
-        {
-            "groupName": "The Rusty Dagger Society",
-            "description": "Long-running campaign centered around a traveling merchant guild with rotating DMs.",
-            "lookingFor": "Group seeking 1 player",
-            "howOften": "Weekly sessions"
-        },
-        {
-            "groupName": "Oathbound Origins",
-            "description": "Two DMs offering both classic Forgotten Realms adventures and homebrew one-shots.",
-            "lookingFor": "DMs seeking players for alternating campaigns",
-            "howOften": "Alternating weekly sessions"
-        }
-    ]
+  "groups": [
+    {
+      "groupName": "The Silver Griffins",
+      "description": "A high-fantasy campaign set in a homebrew world full of ancient ruins and rival guilds.",
+      "lookingFor": "DM looking for 2 players",
+      "howOften": "Weekly on Friday nights",
+      "contact": "silvergriffins@gmail.com",
+      "picture": "images/silver-griffins.jpg"
+    },
+    {
+      "groupName": "Critical Missfits",
+      "description": "Casual, roleplay-focused group that just wrapped up 'Curse of Strahd' and is ready for a new adventure.",
+      "lookingFor": "Group seeking a new DM",
+      "howOften": "Flexible scheduling, prefer weekends",
+      "contact": "criticalmissfits@yahoo.com",
+      "picture": "images/critical-missfits.jpg"
+    },
+    {
+      "groupName": "The Dragon's Den Delvers",
+      "description": "Currently running 'Lost Mine of Phandelver'. New players welcome!",
+      "lookingFor": "Group looking for 1-2 players",
+      "howOften": "Every other Sunday afternoon",
+      "contact": "555-345-6789",
+      "picture": "images/dragons-den-delvers.jpg"
+    },
+    {
+      "groupName": "The Wandering Dice",
+      "description": "Three friends looking to start their first ever campaign. Open to any setting or system.",
+      "lookingFor": "New players seeking a DM",
+      "howOften": "Open schedule, prefer weekday evenings",
+      "contact": "wanderingdicegroup@gmail.com",
+      "picture": "images/wandering-dice.jpg"
+    },
+    {
+      "groupName": "Echoes of Elaris",
+      "description": "A darker, political intrigue campaign inspired by Game of Thrones. Heavy on roleplay, light on combat.",
+      "lookingFor": "DM seeking experienced players",
+      "howOften": "Thursday evenings",
+      "contact": "555-567-8901",
+      "picture": "images/echoes-of-elaris.jpg"
+    },
+    {
+      "groupName": "Goblin Snacks Anonymous",
+      "description": "Lighthearted and comedic campaign, full of creative problem-solving and chaos.",
+      "lookingFor": "Group needs 1 more chaotic adventurer",
+      "howOften": "Mondays at The Boardwalk Café",
+      "contact": "goblinsnacks@gmail.com",
+      "picture": "images/goblin-snacks-anonymous.jpg"
+    },
+    {
+      "groupName": "The Feywild Fellowship",
+      "description": "A whimsical, exploration-based story set in the Feywild. Perfect for imaginative players.",
+      "lookingFor": "DM seeking 3-4 players",
+      "howOften": "Biweekly on Saturday mornings",
+      "contact": "555-789-0123",
+      "picture": "images/feywild-fellowship.jpg"
+    },
+    {
+      "groupName": "Rogues & Remedies",
+      "description": "Healer main with 5 years of experience seeking a mid-level campaign. Can play online or in-person.",
+      "lookingFor": "Player looking for a group",
+      "howOften": "Available weekends",
+      "contact": "rogues.remedies@outlook.com",
+      "picture": "images/rogues-and-remedies.jpg"
+    },
+    {
+      "groupName": "The Rusty Dagger Society",
+      "description": "Long-running campaign centered around a traveling merchant guild with rotating DMs.",
+      "lookingFor": "Group seeking 1 player",
+      "howOften": "Weekly sessions",
+      "contact": "555-901-2345",
+      "picture": "images/rusty-dagger-society.jpg"
+    },
+    {
+      "groupName": "Oathbound Origins",
+      "description": "Two DMs offering both classic Forgotten Realms adventures and homebrew one-shots.",
+      "lookingFor": "DMs seeking players for alternating campaigns",
+      "howOften": "Alternating weekly sessions",
+      "contact": "oathboundorigins@gmail.com",
+      "picture": "images/oathbound-origins.jpg"
+    }
+  ]
 }

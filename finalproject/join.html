@@ -14,9 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Markazi+Text:wght@400..700&display=swap"
         rel="stylesheet">
-   
+
     <script src="scripts/join.js" defer></script>
-        <!--Probaly need to include the social media aspects in here. Grab them from the chamber project (or base it off that)-->
+    <!--Probaly need to include the social media aspects in here. Grab them from the chamber project (or base it off that)-->
 </head>
 
 <body>
@@ -33,7 +33,32 @@
     <main>
         <div id="groups"></div>
         <form>
-            <!-- start by creating the form. Then go from there -->
+            <h3>Want to create a post?</h3>
+            <fieldset>
+                <Legend>Personal Info (Will not be displayed publicly)</Legend>
+                <label for="fname" class="label-title">First Name*:</label>
+                <input type="text" id="fname" name="fname" autocomplete="given-name" required>
+                <label for="lname" class="label-title">Last Name*:</label>
+                <input type="text" id="lname" name="lname" autocomplete="family-name" required>
+                <label for="email" class="label-title">Email*:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <label for="phone" class="label-title">Phone Number*:</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="[0-9]{7,11}" required>
+            </fieldset>
+            <fieldset>
+                <legend>Post Information (will be publicly displayed)</legend>
+                <label for="groupName" class="label-title">Group Name*:</label>
+                <input type="text" id="groupName" name="groupName" required>
+                <label for="lookingFor" class="label-title">Looking For*:</label>
+                <input type="text" id="lookingFor" name="lookingFor" placeholder="ie. player seeking group..." required>
+                <label for="schedule" class="label-title">Availability*:</label>
+                <input type="text" id="schedule" name="schedule" required>
+                <label for="description" class="label-title">Description*:</label>
+                <textarea id="description" name="description" rows="7" placeholder="A brief description of the group or campaign..."></textarea>
+                <label for="contact" class="label-title">Contact Information*:</label>
+                <input type="text" id="contact" name="contact" placeholder="email or phone..." required>
+            </fieldset>
+            <button type="submit">Create Post</button>
         </form>
     </main>
 
