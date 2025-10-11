@@ -9,7 +9,7 @@
 
 .gallery {
     position: relative;
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     overflow-x: auto;
@@ -29,9 +29,7 @@
 }
 
 .scrollLeft {
-    /* position: absolute;
-    top: 50%; */
-    /* left: 10px; */
+    margin: .5rem;
     padding: 3rem 1rem;
     transform: translateY(-50%);
     z-index: 10;
@@ -39,28 +37,12 @@
 }
 
 .scrollRight {
-      /* position: absolute; */
-    /* top: 50%; */
-    /* right: 10px; */
+    margin: .5rem;
     padding: 3rem 1rem;
     transform: translateY(-50%);
     z-index: 10;
     background-color: rgb(121, 13, 13);
 }
-
-
-
-/* .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-}
-
-.gallery img {
-    margin: 1rem;
-    height: 200px;
-} */
 
 section p {
     text-align: center;
@@ -80,6 +62,24 @@ main h1 {
 
 
 
-body h2 {
+main h2 {
     color: rgb(121, 13, 13);
+}
+
+@media screen and (max-width: 700px) {
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery img {
+        margin: 1rem auto;
+        max-width: 400px;
+    }
+
+    .scrollLeft, .scrollRight {
+        display: none;
+    }
+    
 }
