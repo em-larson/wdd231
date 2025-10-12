@@ -21,20 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//responsive menu code//
-const hamButton = document.querySelector("#menu");
-const navigation = document.querySelector("#mainNav");
 
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
+//header and footer code//
 
-// //footer code//
+import { responsiveMenu } from "./headerfooter.js";
+import { footerCode } from "./headerfooter.js";
 
-const year = new Date().getFullYear();
-const month = new Date().getMonth() + 1;
-const day = new Date().getDate();
 
-document.getElementById("copyright").innerHTML = `&copy ${year} | Emily Larson | Utah, USA`;
-document.getElementById('modified').textContent = `Date Modified: ${month}/${day}/${year}`;
+window.addEventListener('DOMContentLoaded', () => {
+    responsiveMenu();
+    footerCode();
+})

@@ -1,22 +1,18 @@
-//responsive menu code//
-const hamButton = document.querySelector("#menu");
-const navigation = document.querySelector("#mainNav");
 
-hamButton.addEventListener('click', () => {
-    navigation.classList.toggle('open');
-    hamButton.classList.toggle('open');
-});
+//header and footer code//
 
-//footer code//
+import { responsiveMenu } from "./headerfooter.js";
+import { footerCode } from "./headerfooter.js";
 
-const year = new Date().getFullYear();
-const month = new Date().getMonth() + 1;
-const day = new Date().getDate();
 
-document.getElementById("copyright").innerHTML = `&copy ${year} | Emily Larson | Utah, USA`;
-document.getElementById('modified').textContent = `Date Modified: ${month}/${day}/${year}`;
+window.addEventListener('DOMContentLoaded', () => {
+    responsiveMenu();
+    footerCode();
+})
+
 
 //create group cards//
+
 const groupcard = document.querySelector('#groups');
 
 const fetchGroupData = async () => {
@@ -67,14 +63,12 @@ const displayGroupCards = (dndgroups) => {
 
         modal.appendChild(name.cloneNode(true));
         modal.appendChild(lookingfor.cloneNode(true));
-        // modal.appendChild(often.cloneNode(true));
         modal.appendChild(contact);
         modal.appendChild(description);
         modal.appendChild(closebutton);
 
         card.appendChild(name);
         card.appendChild(lookingfor);
-        // card.appendChild(often);
         card.appendChild(modal);
         card.appendChild(button);
         card.appendChild(picture);
