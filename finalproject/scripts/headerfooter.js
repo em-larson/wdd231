@@ -23,4 +23,5 @@ const day = new Date().getDate();
 document.getElementById("copyright").innerHTML = `&copy ${year} | Emily Larson | Utah, USA`;
 document.getElementById('modified').textContent = `Date Modified: ${month}/${day}/${year}`;
 
+
 }
