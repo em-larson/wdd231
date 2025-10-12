@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         rightBtn.addEventListener('click', () => {
             gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-            console.log('its working');
         });
     });
 });
