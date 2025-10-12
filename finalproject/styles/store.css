@@ -33,7 +33,7 @@
     padding: 3rem 1rem;
     transform: translateY(-50%);
     z-index: 10;
-    background-color: rgb(121, 13, 13);
+    background-color: rgb(165, 163, 163);
 }
 
 .scrollRight {
@@ -41,7 +41,7 @@
     padding: 3rem 1rem;
     transform: translateY(-50%);
     z-index: 10;
-    background-color: rgb(121, 13, 13);
+    background-color: rgb(165, 163, 163);
 }
 
 section p {
