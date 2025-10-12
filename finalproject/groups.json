@@ -79,6 +79,62 @@
       "howOften": "Alternating weekly sessions",
       "contact": "oathboundorigins@gmail.com",
       "picture": "images/bluedice.webp"
+    },
+    {
+      "groupName": "Mystic Moon Marauders",
+      "description": "A night-themed adventure campaign focusing on secret societies and hidden magic.",
+      "lookingFor": "DM seeking 2-3 players",
+      "howOften": "Tuesdays at 7 PM",
+      "contact": "mysticmoon@gmail.com",
+      "picture": "images/bluedice.webp"
+    },
+    {
+      "groupName": "The Silver Scales",
+      "description": "Dragon-themed campaign with heavy combat and tactical play.",
+      "lookingFor": "Group looking for 1 healer",
+      "howOften": "Fridays at 6 PM",
+      "contact": "silverscales@outlook.com",
+      "picture": "images/bluedice.webp"
+    },
+    {
+      "groupName": "Whispering Shadows",
+      "description": "Mystery and intrigue campaign with dark urban settings.",
+      "lookingFor": "Players seeking stealth-focused characters",
+      "howOften": "Wednesdays at 8 PM",
+      "contact": "whispering.shadows@gmail.com",
+      "picture": "images/bluedice.webp"
+    },
+    {
+      "groupName": "The Arcane Assembly",
+      "description": "Wizard-centric campaign exploring magical research and ancient artifacts.",
+      "lookingFor": "Players interested in spellcasters",
+      "howOften": "Saturdays at 3 PM",
+      "contact": "arcaneassembly@gmail.com",
+      "picture": "images/bluedice.webp"
+    },
+    {
+      "groupName": "Dice & Daggers",
+      "description": "Adventure-heavy campaign focused on dungeon crawls and treasure hunting.",
+      "lookingFor": "A co-dm to help with combat",
+      "howOften": "Alternate Sundays",
+      "contact": "diceanddaggers@gmail.com",
+      "picture": "images/pinkdice.webp"
+    },
+    {
+      "groupName": "The Enchanted Tavern",
+      "description": "Roleplay-focused campaign set in a magical tavern that travels across realms.",
+      "lookingFor": "DM seeking 3 players",
+      "howOften": "Mondays at 7 PM",
+      "contact": "enchantedtavern@gmail.com",
+      "picture": "images/bluedice.webp"
+    },
+    {
+      "groupName": "Shadowveil Seekers",
+      "description": "Stealth and espionage adventures set in a noir fantasy world.",
+      "lookingFor": "Players who enjoy tactical missions",
+      "howOften": "Thursdays at 9 PM",
+      "contact": "shadowveilseekers@gmail.com",
+      "picture": "images/bluedice.webp"
     }
   ]
 }
